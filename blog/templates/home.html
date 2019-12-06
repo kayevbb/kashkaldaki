@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <iframe style="margin-left: 540px;" width="1000" height="850"  src="https://www.mapquest.com/kyrgyzstan/bishkek-283515035" frameborder="0" allowfullscreen="0"></iframe>
+
+{% for post in object_list %}
+<div class="post-entry">
+    <h2><a style="margin-left: -200px;" bottom="420px" href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+    <p> {{ post.body }}</p>
+</div>
+{% endfor %}
+{% endblock content %}
+

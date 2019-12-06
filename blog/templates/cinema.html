@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1>Cinema.Kg</h1>
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}</form>
+    <iframe style="margin-left: 540px;" width="1000" height="900"  src="https://www.mapquest.com/kyrgyzstan/bishkek-283515035" frameborder="0" allowfullscreen="0"></iframe>
+{% endblock content %}
